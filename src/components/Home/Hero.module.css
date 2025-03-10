@@ -1,0 +1,88 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background: linear-gradient(135deg, rgba(26, 39, 83, 0.882) 5%, rgba(254, 198, 86, 0.569) 100%);
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+.leftContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.smallImage {
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+.rightContent {
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.largeImage {
+  height: 90%;
+  width: 90%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+
+.leftContent h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color:white;
+  animation-name:glow;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  letter-spacing: 2px;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #1a2753;}
+  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #1a2753;}
+}
+
+.buttons {
+  margin-top: 0;
+}
+
+.buttons button {
+  padding: 16px 28px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #1a2753;
+  color: white;
+  border: none;
+
+}
+
+.secondary {
+  background: none;
+  color: #1a2753;
+  border: 1px solid #1a2753;
+  font-weight: 400;
+
+
+}
+.secondary button{
+  border: 2px dotted #1a2753;
+
+}

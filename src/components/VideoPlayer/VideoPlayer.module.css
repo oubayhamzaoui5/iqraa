@@ -1,0 +1,108 @@
+.container {
+  text-align: center;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16/9;
+  height: auto;
+  left: -4px;
+}
+ 
+#player {
+  position: absolute;;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+  pointer-events: all;
+}
+
+.controls {
+  background: linear-gradient(to bottom, #12181B 10%, #161c1f);
+  color: #AAB6C5;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px -2px #aab6c530;
+}
+
+.seekBar {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+}
+
+.volume span {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.volumeBar {
+  width: 100px;
+}
+
+.playSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.playPause {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.underBar{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.volume{
+  display: flex;
+  align-items: center;
+  
+}
+.playSection{
+  display: flex;
+  align-items: center;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.playPause{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  font-size: 1.3em;
+  color: #AAB6C5;
+}

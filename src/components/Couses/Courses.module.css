@@ -1,0 +1,178 @@
+.coursesContainer {
+    padding: 20px 0px;
+    text-align: center;
+  }
+  
+  .categories {
+    margin-bottom: 20px;
+  }
+  .btitle{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'roboto', Courier, monospace;
+    letter-spacing: 2px;
+    color: #1a2753;
+    margin-bottom: 20px;
+  }
+  
+  .categoriesButton {
+    margin: 5px;
+    padding: 12px 16px;
+    border: rgb(254, 198, 86,0.5) 1px solid;
+    border-radius: 4px;
+    background:none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'roboto', Courier, monospace;
+    color: #1a2753;
+    letter-spacing: 1px;
+
+  }
+  
+  .categoriesButton:hover {
+    background-color: #9ba3ac2c;
+  }
+  
+   .active{
+    background-color: #1a2753;
+    color: #fff;
+    border: none;
+
+  }
+  .active:hover{
+    background-color: #1a2753;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .coursesList {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    gap: 2vh;
+    padding: 0 0px;
+  }
+  
+  .courseCard {
+    position: relative;
+    background-color: none;
+    color: #1a2753;
+    border: 1px solid rgb(254, 198, 86,0.5);
+    border-radius: 4px;
+    padding: 24px 20px;
+    padding-bottom: 16px;
+    box-shadow: 0 2px 5px rgba(41, 41, 41, 0.3);
+    transition: box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing is consistent */
+    min-height: 100%; /* Ensure all cards have the same height */
+  }
+  .instructorImage {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 20px;
+  }
+  
+  .courseCard:hover {
+    box-shadow: 0 2px 20px rgba(41, 41, 41, 0.1);
+  }
+  
+  .tags {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tag {
+    display: inline-block;
+    font-family: 'roboto', Courier, monospace;
+
+    background-color: #fff;
+    color: #1a2753;
+    padding: 5px 10px;
+    margin-right: 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  
+  .enrollBtn {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #FEC556;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.15s linear;
+    font-weight: bold;
+    font-family: 'roboto', Courier, monospace;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+
+
+  }
+  .enrollBtn:hover{
+    transform: translateY(-2px);
+  }
+  .enrollBtn:active{
+    transform: translateY(0);
+  }
+  
+ 
+  .instructor{
+    color: #FEC556;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+
+  }
+  .stars{
+    font-size: 1.4em;
+  }
+  .nrate{
+    font-size: 0.75em;
+  }
+  .instructor:hover{
+    cursor: pointer;
+  }
+  .title{
+    font-size: 1.45em;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .description{
+    margin-bottom: 4px;
+  }
+  .durcat{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    color: #1a2753;
+    font-size: 1em;
+    font-weight: 100;
+    font-family: 'roboto', Courier, monospace;
+
+
+  }
+  .place{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: absolute;
+    right:  4px;
+    top: 2px;
+    color: #1a2753;
+  }
+  .price{
+    font-size: 1.4em;
+    padding-right: 8px;
+    font-family: 'roboto', Courier, monospace;
+
+    
+  
+  }

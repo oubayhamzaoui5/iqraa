@@ -1,0 +1,119 @@
+/* Navbar.module.css */
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 16px;
+    background-color: #FEC556;
+    color: #fff;
+    height: 48px;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+    padding-right: 24px;
+  }
+  
+  /* Left section */
+  .navbarLeft {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    color: #d4d6d9;
+    transition: color 0.3s ease;
+    padding: 8px 16px;
+
+  }
+  
+  .navItem:hover {
+    color: #fff;
+  }
+  
+  /* Active state */
+  .active {
+    color: #fff;
+   
+  }
+
+  /* Right section */
+  .navbarRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #c9cbce;
+  }
+  
+
+  
+  /* Sign in button */
+  .signInBtn {
+    background: #1a2753;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'roboto', Courier, monospace;
+
+  }
+  .language{
+    position: relative;
+    cursor: pointer;
+  }
+
+  .languagetxt{
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    font-size: 0.8em;
+    color: #fff;
+    transition: color 0.3s ease;
+
+  }
+  
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .navLinks {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .navbarRight {
+      margin-top: 10px;
+    }
+  }
+  

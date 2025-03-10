@@ -1,0 +1,61 @@
+.videoListContainer {
+  width: 100%;
+    box-sizing: border-box;
+   height: max-content;
+    overflow-y: scroll;
+    scrollbar-color: #a0acba #0c1012;
+  }
+  
+  .videoListContainer h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    padding: 4px 0;
+    letter-spacing: 2px;
+    border-bottom: #B2BECD 1px solid;
+    color: #B2BECD;
+  }
+  
+  .videoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .videoItem {
+    padding: 8px 8px;
+    display: flex;
+    font-weight: 500;
+    font-size: 1em;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #B2BECD;
+  }
+  
+  .videoItem:hover {
+    color: #f0f0f0;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* Safari support */
+    -moz-appearance: none; /* Firefox support */
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B2BECD; /* Default border color */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #B2BECD; /* Inner circle when checked */
+    border-color: #B2BECD; /* Border color when checked */
+    box-shadow: inset 0 0 0 2px #0c1012; /* White inner space */
+  }
+  .RadioContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
