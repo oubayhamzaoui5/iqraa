@@ -2,6 +2,7 @@ Iqraa - Online Learning Platform
 
 
 Iqraa is an educational platform designed for students to access and upload courses. Teachers can also create and manage their own courses, making it easier to share knowledge. The platform offers both free and paid courses, ensuring accessibility for everyone. It aims to provide a structured and interactive learning experience.
+
 🚀 Features
 
     📚 Course Management: Browse and enroll in courses.
